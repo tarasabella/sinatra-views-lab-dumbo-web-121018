@@ -1,9 +1,19 @@
+require "sinatra"
 class App < Sinatra::Base
 
 	get '/' do
 		erb :index
 	end
-  get "/hello" do 
+	require 'sinatra'
+class App < Sinatra::Base
+
+  get '/' do 
+    "Hello, World!"
+  end
+
+end
+  get "/" do 
+   "Hello, World!"
     erb :index
   end 
 
